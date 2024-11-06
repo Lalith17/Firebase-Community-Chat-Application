@@ -1,0 +1,137 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#community-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #2a2935;
+    padding: 5px 10px;
+    text-align: center;
+    z-index: 2; 
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#community-panel h2 {
+    font-size: 16px;
+    margin: 0; 
+    color:aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#left-panel {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #1e1d23;
+    overflow-y: auto;
+    z-index: 3;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#community-selection {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#community-selection button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%; 
+    background-color: #3b3945;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+#community-selection button.active {
+    background-color: #003c7b; 
+    color: #fff;
+}
+
+
+
+#right-panel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 200px;
+    background-color: #241f2c;
+    overflow-y: auto;
+    z-index: 0;
+    padding-top: 25px; 
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#chat-box {
+    position: relative;
+    height: calc(100% - 50px);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#chat-messages {
+    margin-bottom: 60px;
+    line-height: 1.5;
+}
+
+#user-input-container {
+    position: fixed;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+    padding: 10px;
+    background-color: #2a2935;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+}
+
+#user-input {
+    width: calc(100% - 70px);
+    margin-right: 10px;
+    background-color: #2a2935;
+    border: 1px solid #454559;
+    padding: 8px;
+    color: #fff;
+    outline: none;
+}
+
+button {
+    width: 60px;
+    background-color: #0051a7;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003c7b; 
+}
+.message {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.sender {
+    background-color: #DCF8C6;
+    align-self: flex-end;
+}
+
+.receiver {
+    background-color: #EFEFEF;
+    align-self: flex-start;
+}
